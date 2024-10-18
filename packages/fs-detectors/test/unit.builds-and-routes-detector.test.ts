@@ -3,7 +3,7 @@ import type {
   RouteWithHandle as Handler,
   RouteWithSrc as Source,
 } from '@vercel/routing-utils';
-import type { PackageJson } from '@vercel/build-utils';
+import type { PackageJson } from '@khulnasoft/build-utils';
 import {
   detectBuilders,
   detectOutputDirectory,
@@ -856,7 +856,7 @@ describe('Test `detectBuilders`', () => {
 
     expect(builders).toEqual([
       {
-        use: '@vercel/ruby',
+        use: '@khulnasoft/ruby',
         src: 'api/date.rb',
         config: {
           zeroConfig: true,
@@ -2251,7 +2251,7 @@ describe('Test `detectBuilders` with `featHandleMiss=true`', () => {
 
     expect(builders).toStrictEqual([
       {
-        use: '@vercel/redwood',
+        use: '@khulnasoft/redwood',
         src: 'package.json',
         config: {
           zeroConfig: true,
@@ -2298,7 +2298,7 @@ describe('Test `detectBuilders` with `featHandleMiss=true`', () => {
         },
       },
       {
-        use: '@vercel/redwood',
+        use: '@khulnasoft/redwood',
         src: 'package.json',
         config: {
           zeroConfig: true,
@@ -2368,7 +2368,7 @@ describe('Test `detectBuilders` with `featHandleMiss=true`', () => {
 
     expect(builders).toEqual([
       {
-        use: '@vercel/ruby',
+        use: '@khulnasoft/ruby',
         src: 'api/date.rb',
         config: {
           zeroConfig: true,
@@ -2571,7 +2571,7 @@ describe('Test `detectBuilders` with `featHandleMiss=true`', () => {
         },
       },
       {
-        use: '@vercel/remix-builder',
+        use: '@khulnasoft/remix-builder',
         src: 'package.json',
         config: {
           framework: 'remix',
@@ -3848,7 +3848,7 @@ describe('Test `detectApiExtensions`', () => {
         },
       },
       {
-        use: '@vercel/ruby',
+        use: '@khulnasoft/ruby',
         src: 'api/**/*.rb',
         config: {
           zeroConfig: true,

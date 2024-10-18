@@ -14,7 +14,7 @@
 
 ```ts
 import * as s3 from '@aws-sdk/client-s3';
-import { awsCredentialsProvider } from '@vercel/functions/oidc';
+import { awsCredentialsProvider } from '@khulnasoft/functions/oidc';
 
 const s3Client = new s3.S3Client({
   credentials: awsCredentialsProvider({
@@ -37,7 +37,7 @@ export const GET = () => {
 ```ts
 import { ClientAssertionCredential } from '@azure/identity';
 import { CosmosClient } from '@azure/cosmos';
-import { getVercelOidcToken } from '@vercel/functions/oidc';
+import { getVercelOidcToken } from '@khulnasoft/functions/oidc';
 
 const credentialsProvider = new ClientAssertionCredential(
   process.env.AZURE_TENANT_ID,

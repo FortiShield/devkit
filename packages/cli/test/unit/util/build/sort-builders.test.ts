@@ -15,13 +15,13 @@ describe('sortBuilders()', () => {
     },
     {
       name: 'should sort @vercel/remix from end to beginning',
-      input: ['@vercel/python', '@vercel/node', '@vercel/remix-builder'],
-      output: ['@vercel/remix-builder', '@vercel/python', '@vercel/node'],
+      input: ['@vercel/python', '@vercel/node', '@khulnasoft/remix-builder'],
+      output: ['@khulnasoft/remix-builder', '@vercel/python', '@vercel/node'],
     },
     {
-      name: 'should sort @vercel/redwood from beginning to beginning',
-      input: ['@vercel/redwood', '@vercel/python', '@vercel/ruby'],
-      output: ['@vercel/redwood', '@vercel/python', '@vercel/ruby'],
+      name: 'should sort @khulnasoft/redwood from beginning to beginning',
+      input: ['@khulnasoft/redwood', '@vercel/python', '@khulnasoft/ruby'],
+      output: ['@khulnasoft/redwood', '@vercel/python', '@khulnasoft/ruby'],
     },
     {
       name: 'should sort @vercel/hydrogen from end to beginning',

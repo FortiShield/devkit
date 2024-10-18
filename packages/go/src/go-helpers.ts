@@ -11,13 +11,13 @@ import {
 } from 'fs-extra';
 import { delimiter, dirname, join } from 'path';
 import stringArgv from 'string-argv';
-import { cloneEnv, debug } from '@vercel/build-utils';
+import { cloneEnv, debug } from '@khulnasoft/build-utils';
 import { pipeline } from 'stream';
 import { promisify } from 'util';
 import { tmpdir } from 'os';
 import yauzl from 'yauzl-promise';
 import XDGAppPaths from 'xdg-app-paths';
-import type { Env } from '@vercel/build-utils';
+import type { Env } from '@khulnasoft/build-utils';
 
 const streamPipeline = promisify(pipeline);
 

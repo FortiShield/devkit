@@ -1,5 +1,5 @@
 {
-  "name": "@vercel/ruby",
+  "name": "@khulnasoft/ruby",
   "author": "Nathan Cahill <nathan@nathancahill.com>",
   "version": "2.1.0",
   "license": "Apache-2.0",
@@ -21,10 +21,10 @@
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
+    "@khulnasoft/build-utils": "^8.3.6",
     "@types/fs-extra": "8.0.0",
     "@types/semver": "6.0.0",
     "@types/which": "3.0.0",
-    "@vercel/build-utils": "8.3.6",
     "execa": "2.0.4",
     "fs-extra": "^7.0.1",
     "jest-junit": "16.0.0",

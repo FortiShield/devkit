@@ -17,7 +17,7 @@ import {
   Images,
   File,
   FlagDefinitions,
-} from '@vercel/build-utils';
+} from '@khulnasoft/build-utils';
 import { NodeFileTraceReasons } from '@vercel/nft';
 import type {
   HasField,
@@ -37,7 +37,7 @@ import escapeStringRegexp from 'escape-string-regexp';
 import { htmlContentType } from '.';
 import textTable from 'text-table';
 import { getNextjsEdgeFunctionSource } from './edge-function-source/get-edge-function-source';
-import type { LambdaOptionsWithFiles } from '@vercel/build-utils/dist/lambda';
+import type { LambdaOptionsWithFiles } from '@khulnasoft/build-utils/dist/lambda';
 import { stringifySourceMap } from './sourcemapped';
 import type { RawSourceMap } from 'source-map';
 import { prettyBytes } from './pretty-bytes';
@@ -289,7 +289,7 @@ export async function getRoutesManifest(
   if (shouldHaveManifest && !hasRoutesManifest) {
     throw new NowBuildError({
       message: `The file "${pathRoutesManifest}" couldn't be found. This is often caused by a misconfiguration in your project.`,
-      link: 'https://err.sh/vercel/vercel/now-next-routes-manifest',
+      link: 'https://err.sh/khulnasoft/devkit/now-next-routes-manifest',
       code: 'NEXT_NO_ROUTES_MANIFEST',
     });
   }

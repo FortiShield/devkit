@@ -1,4 +1,4 @@
-import { spawnAsync } from '@vercel/build-utils';
+import { spawnAsync } from '@khulnasoft/build-utils';
 import { resolve, delimiter } from 'path';
 import {
   sleep,

@@ -1,4 +1,4 @@
-import type { BuilderFunctions } from '@vercel/build-utils';
+import type { BuilderFunctions } from '@khulnasoft/build-utils';
 import type { Readable, Writable } from 'stream';
 import type * as tty from 'tty';
 import type { Route } from '@vercel/routing-utils';
@@ -7,7 +7,7 @@ import { PROJECT_ENV_TARGET } from '@vercel-internals/constants';
 export type ProjectEnvTarget = (typeof PROJECT_ENV_TARGET)[number];
 export type ProjectEnvType = 'plain' | 'encrypted' | 'system' | 'sensitive';
 
-export type ProjectSettings = import('@vercel/build-utils').ProjectSettings;
+export type ProjectSettings = import('@khulnasoft/build-utils').ProjectSettings;
 
 export type Primitive =
   | bigint

@@ -203,7 +203,7 @@ export const frameworks = [
     website: 'https://remix.run',
     sort: 6,
     supersedes: ['hydrogen', 'vite'],
-    useRuntime: { src: 'package.json', use: '@vercel/remix-builder' },
+    useRuntime: { src: 'package.json', use: '@khulnasoft/remix-builder' },
     ignoreRuntimes: ['@vercel/node'],
     detectors: {
       some: [
@@ -1539,7 +1539,7 @@ export const frameworks = [
     description: 'A RedwoodJS app, bootstraped with create-redwood-app.',
     website: 'https://redwoodjs.com',
     envPrefix: 'REDWOOD_ENV_',
-    useRuntime: { src: 'package.json', use: '@vercel/redwood' },
+    useRuntime: { src: 'package.json', use: '@khulnasoft/redwood' },
     ignoreRuntimes: ['@vercel/node'],
     detectors: {
       every: [

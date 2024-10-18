@@ -9,7 +9,7 @@ import type {
   Config,
   BuilderFunctions,
   ProjectSettings,
-} from '@vercel/build-utils';
+} from '@khulnasoft/build-utils';
 import { isOfficialRuntime } from './is-official-runtime';
 
 /**
@@ -481,7 +481,7 @@ function getApiMatches(): Builder[] {
     { src: 'api/**/*.+(js|mjs|ts|tsx)', use: `@vercel/node`, config },
     { src: 'api/**/!(*_test).go', use: `@vercel/go`, config },
     { src: 'api/**/*.py', use: `@vercel/python`, config },
-    { src: 'api/**/*.rb', use: `@vercel/ruby`, config },
+    { src: 'api/**/*.rb', use: `@khulnasoft/ruby`, config },
   ];
 }
 

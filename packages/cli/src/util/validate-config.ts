@@ -13,7 +13,7 @@ import {
   buildsSchema,
   NowBuildError,
   getPrettyError,
-} from '@vercel/build-utils';
+} from '@khulnasoft/build-utils';
 import { fileNameSymbol } from '@vercel/client';
 
 const imagesSchema = {

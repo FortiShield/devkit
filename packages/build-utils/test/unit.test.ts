@@ -696,7 +696,7 @@ it('should detect package.json in nested backend', async () => {
   );
   const result = await scanParentDirs(fixture);
   expect(result.cliType).toEqual('pnpm');
-  // There is no lockfile but this test will pick up vercel/vercel/pnpm-lock.yaml
+  // There is no lockfile but this test will pick up khulnasoft/devkit/pnpm-lock.yaml
   expect(result.lockfileVersion).toEqual(6);
   expect(result.packageJsonPath).toEqual(path.join(fixture, 'package.json'));
 });
@@ -708,7 +708,7 @@ it('should detect package.json in nested frontend', async () => {
   );
   const result = await scanParentDirs(fixture);
   expect(result.cliType).toEqual('pnpm');
-  // There is no lockfile but this test will pick up vercel/vercel/pnpm-lock.yaml
+  // There is no lockfile but this test will pick up khulnasoft/devkit/pnpm-lock.yaml
   expect(result.lockfileVersion).toEqual(6);
   expect(result.packageJsonPath).toEqual(path.join(fixture, 'package.json'));
 });

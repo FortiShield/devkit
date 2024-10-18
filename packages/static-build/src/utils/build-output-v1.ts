@@ -8,7 +8,7 @@ import {
   NodejsLambda,
   debug,
   glob,
-} from '@vercel/build-utils';
+} from '@khulnasoft/build-utils';
 import { BuildConfig, ImagesConfig, isObjectEmpty } from './_shared';
 
 const VERCEL_BUILD_OUTPUT = '.vercel_build_output';

@@ -8,7 +8,7 @@ import {
   glob,
   EdgeFunction,
   BuildResultV2,
-} from '@vercel/build-utils';
+} from '@khulnasoft/build-utils';
 import { isObjectEmpty } from './_shared';
 import { Project } from 'ts-morph';
 import { getConfig } from '@vercel/static-config';

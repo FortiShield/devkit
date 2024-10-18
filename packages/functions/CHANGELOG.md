@@ -1,4 +1,4 @@
-# @vercel/functions
+# @khulnasoft/functions
 
 ## 1.4.1
 
@@ -28,7 +28,7 @@
 
 ### Minor Changes
 
-- Rewrite `@vercel/functions` to TypeScript ([#11791](https://github.com/khulnasoft/devkit/pull/11791))
+- Rewrite `@khulnasoft/functions` to TypeScript ([#11791](https://github.com/khulnasoft/devkit/pull/11791))
 
 ## 1.0.2
 

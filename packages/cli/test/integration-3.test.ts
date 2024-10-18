@@ -5,7 +5,7 @@ import { once } from 'node:events';
 import { URL } from 'url';
 import semVer from 'semver';
 import { homedir } from 'os';
-import { runNpmInstall } from '@vercel/build-utils';
+import { runNpmInstall } from '@khulnasoft/build-utils';
 import { execCli } from './helpers/exec';
 import fetch, { RequestInfo } from 'node-fetch';
 import fs from 'fs-extra';

@@ -4,7 +4,7 @@ import pluralize from 'pluralize';
 import { homedir } from 'os';
 import slugify from '@sindresorhus/slugify';
 import { basename, join, normalize } from 'path';
-import { normalizePath, traverseUpDirectories } from '@vercel/build-utils';
+import { normalizePath, traverseUpDirectories } from '@khulnasoft/build-utils';
 import { lstat, readJSON, outputJSON } from 'fs-extra';
 import confirm from '../input/confirm';
 import toHumanPath from '../humanize-path';

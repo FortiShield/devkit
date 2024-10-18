@@ -20,7 +20,7 @@ import {
   prepareE2EFixtures,
 } from './helpers/setup-e2e-fixture';
 import formatOutput from './helpers/format-output';
-import type { PackageJson } from '@vercel/build-utils';
+import type { PackageJson } from '@khulnasoft/build-utils';
 import type { CLIProcess } from './helpers/types';
 
 const TEST_TIMEOUT = 3 * 60 * 1000;

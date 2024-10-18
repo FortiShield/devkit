@@ -1,4 +1,4 @@
-# @vercel/functions
+# @khulnasoft/functions
 
 ## Table of contents
 

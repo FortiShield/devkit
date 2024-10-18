@@ -1,6 +1,6 @@
 import { join } from 'path';
 import { promises as fs } from 'fs';
-import { BuildResultV2, Meta } from '@vercel/build-utils';
+import { BuildResultV2, Meta } from '@khulnasoft/build-utils';
 import { Framework } from '@vercel/frameworks';
 
 const BUILD_OUTPUT_DIR = '.vercel/output';

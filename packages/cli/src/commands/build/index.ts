@@ -24,7 +24,7 @@ import {
   type BuildResultV3,
   type Cron,
   type FlagDefinitions,
-} from '@vercel/build-utils';
+} from '@khulnasoft/build-utils';
 import {
   detectBuilders,
   detectFrameworkRecord,

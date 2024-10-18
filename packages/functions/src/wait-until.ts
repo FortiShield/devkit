@@ -8,7 +8,7 @@ import { getContext } from './get-context';
  * @example
  *
  * ```js
- * import { waitUntil } from '@vercel/functions';
+ * import { waitUntil } from '@khulnasoft/functions';
  *
  * export function GET(request) {
  *   waitUntil(fetch('https://vercel.com'));

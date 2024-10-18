@@ -2287,7 +2287,7 @@ packages:
     resolution: {integrity: sha512-17kVyLq3ePTKOkveHxXuIJZtGYs+cSoev7BlP+Lf4916qfDhk/HBjvlYDe8egrea7LNPHKwSZJK/bzZC+Q6AwQ==}
     dev: true
 
-  /@vercel/build-utils/6.3.4:
+  /@khulnasoft/build-utils/6.3.4:
     resolution: {integrity: sha512-7qhJP/5yz/9aBmkJirRxcTrvrLdV6PUT9DpxsILnfdw7WAJ5KSa59kBj8Aw4VhW4CqK4pFcuMMHr73aYRcEmkg==}
     dev: false
 
@@ -2300,7 +2300,7 @@ packages:
     dependencies:
       '@edge-runtime/vm': 2.0.0
       '@types/node': 14.18.33
-      '@vercel/build-utils': 6.3.4
+      '@khulnasoft/build-utils': 6.3.4
       '@vercel/node-bridge': 3.1.14
       '@vercel/static-config': 2.0.13
       edge-runtime: 2.0.0
