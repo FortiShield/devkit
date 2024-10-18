@@ -5,7 +5,7 @@
   "main": "./dist/index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vercel/vercel.git",
+    "url": "https://github.com/khulnasoft/devkit.git",
     "directory": "packages/static-config"
   },
   "scripts": {

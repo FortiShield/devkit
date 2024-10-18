@@ -747,7 +747,7 @@ main()
         pkg,
       });
       if (latest) {
-        const changelog = 'https://github.com/vercel/vercel/releases';
+        const changelog = 'https://github.com/khulnasoft/devkit/releases';
         const errorMsg =
           exitCode && exitCode !== 2
             ? chalk.magenta(

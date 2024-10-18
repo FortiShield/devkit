@@ -1,4 +1,4 @@
-![Docusaurus Logo](https://github.com/vercel/vercel/blob/main/packages/frameworks/logos/docusaurus.svg)
+![Docusaurus Logo](https://github.com/khulnasoft/devkit/blob/main/packages/frameworks/logos/docusaurus.svg)
 
 # Docusaurus Example
 
@@ -8,7 +8,7 @@ This directory is a brief example of a [Docusaurus](https://docusaurus.io/) site
 
 Deploy your own Docusaurus project with Vercel.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/docusaurus&template=docusaurus)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/khulnasoft/devkit/tree/main/examples/docusaurus&template=docusaurus)
 
 _Live Example: https://docusaurus-template.vercel.app_
 

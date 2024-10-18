@@ -1,4 +1,4 @@
-![UmiJS Logo](https://github.com/vercel/vercel/blob/main/packages/frameworks/logos/umi.svg)
+![UmiJS Logo](https://github.com/khulnasoft/devkit/blob/main/packages/frameworks/logos/umi.svg)
 
 # UmiJS Example
 
@@ -8,7 +8,7 @@ This directory is a brief example of a [UmiJS](https://umijs.org/) app that can 
 
 Deploy your own UmiJS project with Vercel.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/umijs&template=umijs)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/khulnasoft/devkit/tree/main/examples/umijs&template=umijs)
 
 _Live Example: https://umijs-template.vercel.app_
 

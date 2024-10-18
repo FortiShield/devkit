@@ -843,7 +843,7 @@ export async function startDevServer(
   }`;
 
   // Note: We must run `go build`, then manually spawn the dev server instead
-  // of spawning `go run`. See https://github.com/vercel/vercel/pull/8718 for
+  // of spawning `go run`. See https://github.com/khulnasoft/devkit/pull/8718 for
   // more info.
 
   // build the dev server

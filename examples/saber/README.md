@@ -1,4 +1,4 @@
-![Saber Logo](https://github.com/vercel/vercel/blob/main/packages/frameworks/logos/saber.svg)
+![Saber Logo](https://github.com/khulnasoft/devkit/blob/main/packages/frameworks/logos/saber.svg)
 
 # Saber Example
 
@@ -8,7 +8,7 @@ This directory is a brief example of a [Saber](https://saber.egoist.dev) site th
 
 Deploy your own Saber project with Vercel.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/saber&template=saber)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/khulnasoft/devkit/tree/main/examples/saber&template=saber)
 
 _Live Example: https://saber-template.vercel.app_
 

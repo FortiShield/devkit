@@ -18,7 +18,7 @@ With the `vercel` command, your project will be built and served by Vercel, prov
 
 ## How to Contribute
 
-Contributing examples should be an enjoyable experience, as such we have created a set of [contributing guidelines](https://github.com/vercel/vercel/blob/main/.github/CONTRIBUTING.md) to help you do so.
+Contributing examples should be an enjoyable experience, as such we have created a set of [contributing guidelines](https://github.com/khulnasoft/devkit/blob/main/.github/CONTRIBUTING.md) to help you do so.
 
 The guidelines cover important information such as the requirements for new examples and where to get help if you have any questions.
 

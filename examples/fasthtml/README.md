@@ -2,7 +2,7 @@
 
 Deploy your [FastHTML](https://fastht.ml/) project to Vercel with zero configuration.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/fasthtml&template=fasthtml)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/khulnasoft/devkit/tree/main/examples/fasthtml&template=fasthtml)
 
 _Live Example: https://fasthtml-template.vercel.app_
 
@@ -37,4 +37,4 @@ vercel --prod
 
 Or `git push` to your repostory with our [git integration](https://vercel.com/docs/deployments/git).
 
-To view the source code for this template, [visit the example repository](https://github.com/vercel/vercel/tree/main/examples/fasthtml).
+To view the source code for this template, [visit the example repository](https://github.com/khulnasoft/devkit/tree/main/examples/fasthtml).

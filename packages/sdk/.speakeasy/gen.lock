@@ -7,7 +7,7 @@ management:
   generationVersion: 2.415.0
   releaseVersion: 14.0.0-canary.0
   configChecksum: 2f405a86619ffae6c5eef067eb61ac41
-  repoURL: https://github.com/vercel/vercel.git
+  repoURL: https://github.com/khulnasoft/devkit.git
   repoSubDirectory: packages/sdk
   installationURL: https://gitpkg.now.sh/vercel/vercel/packages/sdk
   published: true

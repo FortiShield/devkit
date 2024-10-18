@@ -31,7 +31,7 @@ export const frameworks = [
     detectors: {
       some: [
         // Intentionally does not detect a package name
-        // https://github.com/vercel/vercel/pull/8432
+        // https://github.com/khulnasoft/devkit/pull/8432
         {
           path: 'blitz.config.js',
         },

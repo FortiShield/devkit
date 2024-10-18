@@ -13,10 +13,10 @@
   "repository": {
     "directory": "packages/functions",
     "type": "git",
-    "url": "git+https://github.com/vercel/vercel.git"
+    "url": "git+https://github.com/khulnasoft/devkit.git"
   },
   "bugs": {
-    "url": "https://github.com/vercel/vercel/issues"
+    "url": "https://github.com/khulnasoft/devkit/issues"
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "3.609.0",

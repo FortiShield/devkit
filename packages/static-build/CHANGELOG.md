@@ -4,7 +4,7 @@
 
 ### Patch Changes
 
-- Revert "Revert "Revert "Fix corepack `packageManager` detection on monorepos""" ([#12099](https://github.com/vercel/vercel/pull/12099))
+- Revert "Revert "Revert "Fix corepack `packageManager` detection on monorepos""" ([#12099](https://github.com/khulnasoft/devkit/pull/12099))
 
 - Updated dependencies []:
   - @vercel/gatsby-plugin-vercel-builder@2.0.46
@@ -13,7 +13,7 @@
 
 ### Patch Changes
 
-- Revert "Revert "Fix corepack `packageManager` detection on monorepos"" ([#11871](https://github.com/vercel/vercel/pull/11871))
+- Revert "Revert "Fix corepack `packageManager` detection on monorepos"" ([#11871](https://github.com/khulnasoft/devkit/pull/11871))
 
 - Updated dependencies []:
   - @vercel/gatsby-plugin-vercel-builder@2.0.45
@@ -64,7 +64,7 @@
 
 ### Patch Changes
 
-- Revert "Fix corepack `packageManager` detection on monorepos" ([#11865](https://github.com/vercel/vercel/pull/11865))
+- Revert "Fix corepack `packageManager` detection on monorepos" ([#11865](https://github.com/khulnasoft/devkit/pull/11865))
 
 - Updated dependencies []:
   - @vercel/gatsby-plugin-vercel-builder@2.0.38
@@ -73,7 +73,7 @@
 
 ### Patch Changes
 
-- Fix corepack `packageManager` detection on monorepos ([#11811](https://github.com/vercel/vercel/pull/11811))
+- Fix corepack `packageManager` detection on monorepos ([#11811](https://github.com/khulnasoft/devkit/pull/11811))
 
 - Updated dependencies []:
   - @vercel/gatsby-plugin-vercel-builder@2.0.37
@@ -82,7 +82,7 @@
 
 ### Patch Changes
 
-- [framework-fixtures]: Bump the core group across 1 directory with 3 updates ([#11773](https://github.com/vercel/vercel/pull/11773))
+- [framework-fixtures]: Bump the core group across 1 directory with 3 updates ([#11773](https://github.com/khulnasoft/devkit/pull/11773))
 
 - Updated dependencies []:
   - @vercel/gatsby-plugin-vercel-builder@2.0.36
@@ -154,19 +154,19 @@
 
 ### Patch Changes
 
-- Fix `Cannot read properties of null` error ([#11559](https://github.com/vercel/vercel/pull/11559))
+- Fix `Cannot read properties of null` error ([#11559](https://github.com/khulnasoft/devkit/pull/11559))
 
 ## 2.5.3
 
 ### Patch Changes
 
-- Support Ruby and Python static site generators in AL2023 build image ([#11529](https://github.com/vercel/vercel/pull/11529))
+- Support Ruby and Python static site generators in AL2023 build image ([#11529](https://github.com/khulnasoft/devkit/pull/11529))
 
 ## 2.5.2
 
 ### Patch Changes
 
-- Revert `SUPPORTED_RUBY_VERSION` change to fix Ruby site generators on AL2 build image ([#11522](https://github.com/vercel/vercel/pull/11522))
+- Revert `SUPPORTED_RUBY_VERSION` change to fix Ruby site generators on AL2 build image ([#11522](https://github.com/khulnasoft/devkit/pull/11522))
 
 ## 2.5.1
 
@@ -179,7 +179,7 @@
 
 ### Minor Changes
 
-- Don't rely on `hugo` binary existing in build-container ([#11455](https://github.com/vercel/vercel/pull/11455))
+- Don't rely on `hugo` binary existing in build-container ([#11455](https://github.com/khulnasoft/devkit/pull/11455))
 
 ### Patch Changes
 
@@ -204,7 +204,7 @@
 
 ### Patch Changes
 
-- [framework-fixtures]: Bump the core group in /packages/static-build/test/fixtures/angular-v17 with 15 updates ([#11274](https://github.com/vercel/vercel/pull/11274))
+- [framework-fixtures]: Bump the core group in /packages/static-build/test/fixtures/angular-v17 with 15 updates ([#11274](https://github.com/khulnasoft/devkit/pull/11274))
 
 - Updated dependencies []:
   - @vercel/gatsby-plugin-vercel-builder@2.0.22
@@ -227,7 +227,7 @@
 
 ### Patch Changes
 
-- [build-utils] increase max memory limit ([#11209](https://github.com/vercel/vercel/pull/11209))
+- [build-utils] increase max memory limit ([#11209](https://github.com/khulnasoft/devkit/pull/11209))
 
 - Updated dependencies []:
   - @vercel/gatsby-plugin-vercel-builder@2.0.19
@@ -236,7 +236,7 @@
 
 ### Minor Changes
 
-- Revert "Revert "Default ruby to only currently supported version (3.2.0)"" ([#11137](https://github.com/vercel/vercel/pull/11137))
+- Revert "Revert "Default ruby to only currently supported version (3.2.0)"" ([#11137](https://github.com/khulnasoft/devkit/pull/11137))
 
 ### Patch Changes
 
@@ -247,28 +247,28 @@
 
 ### Minor Changes
 
-- Revert "Default ruby to only currently supported version (3.2.0)" ([#11135](https://github.com/vercel/vercel/pull/11135))
+- Revert "Default ruby to only currently supported version (3.2.0)" ([#11135](https://github.com/khulnasoft/devkit/pull/11135))
 
 ### Patch Changes
 
-- Updated dependencies [[`ab2444466`](https://github.com/vercel/vercel/commit/ab24444660339eaeacdaad7ff74594171a142b1e)]:
+- Updated dependencies [[`ab2444466`](https://github.com/khulnasoft/devkit/commit/ab24444660339eaeacdaad7ff74594171a142b1e)]:
   - @vercel/gatsby-plugin-vercel-builder@2.0.17
 
 ## 2.2.0
 
 ### Minor Changes
 
-- Default ruby to only currently supported version (3.2.0) ([#11104](https://github.com/vercel/vercel/pull/11104))
+- Default ruby to only currently supported version (3.2.0) ([#11104](https://github.com/khulnasoft/devkit/pull/11104))
 
 ### Patch Changes
 
-- [tests] Update Gatsby fixture versions ([#11101](https://github.com/vercel/vercel/pull/11101))
+- [tests] Update Gatsby fixture versions ([#11101](https://github.com/khulnasoft/devkit/pull/11101))
 
 ## 2.1.0
 
 ### Minor Changes
 
-- chore: deprecate next/nuxt/gastby Speed Insights injection in favor of @vercel/speed-insights ([#11048](https://github.com/vercel/vercel/pull/11048))
+- chore: deprecate next/nuxt/gastby Speed Insights injection in favor of @vercel/speed-insights ([#11048](https://github.com/khulnasoft/devkit/pull/11048))
 
 ### Patch Changes
 
@@ -279,7 +279,7 @@
 
 ### Patch Changes
 
-- Deprecate `EdgeFunction#name` property ([#11010](https://github.com/vercel/vercel/pull/11010))
+- Deprecate `EdgeFunction#name` property ([#11010](https://github.com/khulnasoft/devkit/pull/11010))
 
 - Updated dependencies []:
   - @vercel/gatsby-plugin-vercel-builder@2.0.15
@@ -295,7 +295,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`652a31275`](https://github.com/vercel/vercel/commit/652a3127533974c426ea8e5b1047af1aecddb57e)]:
+- Updated dependencies [[`652a31275`](https://github.com/khulnasoft/devkit/commit/652a3127533974c426ea8e5b1047af1aecddb57e)]:
   - @vercel/gatsby-plugin-vercel-builder@2.0.13
 
 ## 2.0.14
@@ -309,7 +309,7 @@
 
 ### Patch Changes
 
-- [tests] Update Gatsby fixture versions ([#10875](https://github.com/vercel/vercel/pull/10875))
+- [tests] Update Gatsby fixture versions ([#10875](https://github.com/khulnasoft/devkit/pull/10875))
 
 ## 2.0.12
 
@@ -329,7 +329,7 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`efd3cc05d`](https://github.com/vercel/vercel/commit/efd3cc05dcf3993a68eb2ac41f39d42ed905b036)]:
+- Updated dependencies [[`efd3cc05d`](https://github.com/khulnasoft/devkit/commit/efd3cc05dcf3993a68eb2ac41f39d42ed905b036)]:
   - @vercel/gatsby-plugin-vercel-builder@2.0.9
 
 ## 2.0.9
@@ -350,9 +350,9 @@
 
 ### Patch Changes
 
-- Mark `@vercel/static-config` and `ts-morph` as externals ([#10543](https://github.com/vercel/vercel/pull/10543))
+- Mark `@vercel/static-config` and `ts-morph` as externals ([#10543](https://github.com/khulnasoft/devkit/pull/10543))
 
-- Updated dependencies [[`4b376a564`](https://github.com/vercel/vercel/commit/4b376a564a09679dc1085d3bfcd6290c6f15760e), [`b8bc682d3`](https://github.com/vercel/vercel/commit/b8bc682d3eef0e6033fd6e8db2089c6c4ca671af)]:
+- Updated dependencies [[`4b376a564`](https://github.com/khulnasoft/devkit/commit/4b376a564a09679dc1085d3bfcd6290c6f15760e), [`b8bc682d3`](https://github.com/khulnasoft/devkit/commit/b8bc682d3eef0e6033fd6e8db2089c6c4ca671af)]:
   - @vercel/gatsby-plugin-vercel-builder@2.0.6
   - @vercel/gatsby-plugin-vercel-analytics@1.0.11
 
@@ -360,13 +360,13 @@
 
 ### Patch Changes
 
-- Add support for bun detection in monorepo ([#10511](https://github.com/vercel/vercel/pull/10511))
+- Add support for bun detection in monorepo ([#10511](https://github.com/khulnasoft/devkit/pull/10511))
 
 ## 2.0.5
 
 ### Patch Changes
 
-- Build package using "esbuild" ([#10462](https://github.com/vercel/vercel/pull/10462))
+- Build package using "esbuild" ([#10462](https://github.com/khulnasoft/devkit/pull/10462))
 
 - Updated dependencies []:
   - @vercel/gatsby-plugin-vercel-builder@2.0.5
@@ -375,7 +375,7 @@
 
 ### Patch Changes
 
-- Updated semver dependency ([#10411](https://github.com/vercel/vercel/pull/10411))
+- Updated semver dependency ([#10411](https://github.com/khulnasoft/devkit/pull/10411))
 
 - Updated dependencies []:
   - @vercel/gatsby-plugin-vercel-builder@2.0.4
@@ -405,18 +405,18 @@
 
 ### Major Changes
 
-- BREAKING CHANGE: Drop Node.js 14, bump minimum to Node.js 16 ([#10369](https://github.com/vercel/vercel/pull/10369))
+- BREAKING CHANGE: Drop Node.js 14, bump minimum to Node.js 16 ([#10369](https://github.com/khulnasoft/devkit/pull/10369))
 
 ### Patch Changes
 
-- Updated dependencies [[`bc7a5d38b`](https://github.com/vercel/vercel/commit/bc7a5d38be1016e265fd19f3cf146aa5609fc4ec), [`37f5c6270`](https://github.com/vercel/vercel/commit/37f5c6270058336072ca733673ea72dd6c56bd6a)]:
+- Updated dependencies [[`bc7a5d38b`](https://github.com/khulnasoft/devkit/commit/bc7a5d38be1016e265fd19f3cf146aa5609fc4ec), [`37f5c6270`](https://github.com/khulnasoft/devkit/commit/37f5c6270058336072ca733673ea72dd6c56bd6a)]:
   - @vercel/gatsby-plugin-vercel-builder@2.0.0
 
 ## 1.4.0
 
 ### Minor Changes
 
-- Force-publish ([#10358](https://github.com/vercel/vercel/pull/10358))
+- Force-publish ([#10358](https://github.com/khulnasoft/devkit/pull/10358))
 
 ## 1.3.46
 
@@ -450,7 +450,7 @@
 
 ### Patch Changes
 
-- Add `ignorePackageJsonScript` configuration for Framework command settings to ignore the `package.json` script. ([#10228](https://github.com/vercel/vercel/pull/10228))
+- Add `ignorePackageJsonScript` configuration for Framework command settings to ignore the `package.json` script. ([#10228](https://github.com/khulnasoft/devkit/pull/10228))
 
   Enable this mode for Storybook's `buildCommand`, since it should not invoke the "build" script, which is most likely designated for the frontend app build.
 
@@ -479,7 +479,7 @@
 
 ### Patch Changes
 
-- Use `getNodeBinPaths()` function to improve monorepo support ([#10150](https://github.com/vercel/vercel/pull/10150))
+- Use `getNodeBinPaths()` function to improve monorepo support ([#10150](https://github.com/khulnasoft/devkit/pull/10150))
 
 - Updated dependencies []:
   - @vercel/gatsby-plugin-vercel-builder@1.3.11
@@ -523,14 +523,14 @@
 
 ### Patch Changes
 
-- Updated dependencies [[`e94a153b2`](https://github.com/vercel/vercel/commit/e94a153b2f4d9f23bf74241a62a06fe9996a7b07)]:
+- Updated dependencies [[`e94a153b2`](https://github.com/khulnasoft/devkit/commit/e94a153b2f4d9f23bf74241a62a06fe9996a7b07)]:
   - @vercel/gatsby-plugin-vercel-builder@1.3.5
 
 ## 1.3.31
 
 ### Patch Changes
 
-- ensure cleanup after gatsby plugin runs ([#9975](https://github.com/vercel/vercel/pull/9975))
+- ensure cleanup after gatsby plugin runs ([#9975](https://github.com/khulnasoft/devkit/pull/9975))
 
 - Updated dependencies []:
   - @vercel/gatsby-plugin-vercel-builder@1.3.4

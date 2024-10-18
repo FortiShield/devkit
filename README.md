@@ -35,7 +35,7 @@ This project uses [pnpm](https://pnpm.io/) to install dependencies and run scrip
 
 You can use the `dev` script to run local changes as if you were invoking Vercel CLI. For example, `vercel deploy --cwd=/path/to/project` could be run with local changes with `pnpm dev deploy --cwd=/path/to/project`.
 
-When contributing to this repository, please first discuss the change you wish to make via [GitHub Discussions](https://github.com/vercel/vercel/discussions/new) with the owners of this repository before submitting a Pull Request.
+When contributing to this repository, please first discuss the change you wish to make via [GitHub Discussions](https://github.com/khulnasoft/devkit/discussions/new) with the owners of this repository before submitting a Pull Request.
 
 Please read our [Code of Conduct](./.github/CODE_OF_CONDUCT.md) and follow it in all your interactions with the project.
 
@@ -46,7 +46,7 @@ This project is configured in a monorepo, where one repository contains multiple
 To get started, execute the following:
 
 ```
-git clone https://github.com/vercel/vercel
+git clone https://github.com/khulnasoft/devkit
 cd vercel
 corepack enable
 pnpm install

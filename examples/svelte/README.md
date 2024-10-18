@@ -1,10 +1,10 @@
 # Svelte
 
-This directory is a brief example of a [Svelte](https://svelte.dev/) site that can be deployed to Vercel with zero-configuration. If you need to use API Routes, we recommend using our [SvelteKit example](https://github.com/vercel/vercel/tree/main/examples/sveltekit).
+This directory is a brief example of a [Svelte](https://svelte.dev/) site that can be deployed to Vercel with zero-configuration. If you need to use API Routes, we recommend using our [SvelteKit example](https://github.com/khulnasoft/devkit/tree/main/examples/sveltekit).
 
 ## Deploy Your Own
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/svelte&template=svelte)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/khulnasoft/devkit/tree/main/examples/svelte&template=svelte)
 
 _Live Example: https://svelte.vercel.app_
 

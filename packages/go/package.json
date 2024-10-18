@@ -6,7 +6,7 @@
   "homepage": "https://vercel.com/docs/runtimes#official-runtimes/go",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vercel/vercel.git",
+    "url": "https://github.com/khulnasoft/devkit.git",
     "directory": "packages/go"
   },
   "scripts": {

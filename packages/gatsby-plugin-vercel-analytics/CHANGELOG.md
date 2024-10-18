@@ -4,4 +4,4 @@
 
 ### Patch Changes
 
-- Remove "babel" compilation ([#10546](https://github.com/vercel/vercel/pull/10546))
+- Remove "babel" compilation ([#10546](https://github.com/khulnasoft/devkit/pull/10546))
