@@ -156,7 +156,7 @@ describe('Test `detectFileSystemAPI`', () => {
     const result = await detectFileSystemAPI({
       files: { 'api/foo.rb': 'print("foo")' },
       projectSettings: {},
-      builders: [{ use: '@vercel/ruby', src: 'api/**/*.rb' }],
+      builders: [{ use: '@khulnasoft/ruby', src: 'api/**/*.rb' }],
       vercelConfig: null,
       pkg: null,
       tag: '',
@@ -236,7 +236,7 @@ describe('Test `detectFileSystemAPI`', () => {
     const result = await detectFileSystemAPI({
       files: { 'api/foo.rb': 'print("foo")' },
       projectSettings: {},
-      builders: [{ use: '@vercel/ruby', src: 'api/**/*.rb' }],
+      builders: [{ use: '@khulnasoft/ruby', src: 'api/**/*.rb' }],
       vercelConfig: null,
       pkg: { dependencies: { 'vercel-plugin-ruby': '^1.0.0' } },
       tag: '',

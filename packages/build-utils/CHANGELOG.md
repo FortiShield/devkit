@@ -1,4 +1,4 @@
-# @vercel/build-utils
+# @khulnasoft/build-utils
 
 ## 8.3.6
 

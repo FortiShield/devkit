@@ -38,7 +38,7 @@ import {
   FileFsRef,
   PackageJson,
   spawnCommand,
-} from '@vercel/build-utils';
+} from '@khulnasoft/build-utils';
 import {
   detectBuilders,
   detectApiDirectory,

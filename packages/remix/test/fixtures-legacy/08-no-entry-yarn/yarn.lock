@@ -1965,9 +1965,9 @@
   resolved "https://registry.yarnpkg.com/@vanilla-extract/private/-/private-1.0.3.tgz#7ec72bc2ff6fe51f9d650f962e8d1989b073690f"
   integrity sha512-17kVyLq3ePTKOkveHxXuIJZtGYs+cSoev7BlP+Lf4916qfDhk/HBjvlYDe8egrea7LNPHKwSZJK/bzZC+Q6AwQ==
 
-"@vercel/build-utils@6.3.4":
+"@khulnasoft/build-utils@6.3.4":
   version "6.3.4"
-  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-6.3.4.tgz#9a050f8bad4ba012cd523b8509c7b1c41c827fdf"
+  resolved "https://registry.yarnpkg.com/@khulnasoft/build-utils/-/build-utils-6.3.4.tgz#9a050f8bad4ba012cd523b8509c7b1c41c827fdf"
   integrity sha512-7qhJP/5yz/9aBmkJirRxcTrvrLdV6PUT9DpxsILnfdw7WAJ5KSa59kBj8Aw4VhW4CqK4pFcuMMHr73aYRcEmkg==
 
 "@vercel/node-bridge@3.1.14":
@@ -1982,7 +1982,7 @@
   dependencies:
     "@edge-runtime/vm" "2.0.0"
     "@types/node" "14.18.33"
-    "@vercel/build-utils" "6.3.4"
+    "@khulnasoft/build-utils" "6.3.4"
     "@vercel/node-bridge" "3.1.14"
     "@vercel/static-config" "2.0.13"
     edge-runtime "2.0.0"

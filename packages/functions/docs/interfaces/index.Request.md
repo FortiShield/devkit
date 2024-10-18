@@ -25,4 +25,4 @@ the global `Request`, `node-fetch` and other types.
 
 #### Defined in
 
-[packages/functions/src/headers.ts:40](https://github.com/khulnasoft/devkit/blob/main/packages/functions/src/headers.ts#L40)
+[packages/functions/src/headers.ts:40](https://github.com/FortiShield/devkit/blob/main/packages/functions/src/headers.ts#L40)

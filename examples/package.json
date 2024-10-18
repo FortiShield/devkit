@@ -8,9 +8,9 @@
     "test": "jest --reporters=default --reporters=jest-junit --env node --verbose --runInBand --bail"
   },
   "devDependencies": {
+    "@khulnasoft/build-utils": "^8.3.6",
     "@types/jest": "27.4.1",
-    "@vercel/build-utils": "8.3.6",
-    "@vercel/frameworks": "3.1.1"
+    "@vercel/frameworks": "workspace:*"
   },
   "version": null
 }

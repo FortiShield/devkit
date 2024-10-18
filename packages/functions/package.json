@@ -1,5 +1,5 @@
 {
-  "name": "@vercel/functions",
+  "name": "@khulnasoft/functions",
   "description": "Runtime functions to be used with your Vercel Functions",
   "homepage": "https://vercel.com",
   "files": [

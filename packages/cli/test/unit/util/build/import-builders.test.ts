@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { join } from 'path';
 import { remove } from 'fs-extra';
-import { getWriteableDirectory } from '@vercel/build-utils';
+import { getWriteableDirectory } from '@khulnasoft/build-utils';
 import { client } from '../../../mocks/client';
 import {
   importBuilders,

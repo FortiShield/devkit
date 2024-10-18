@@ -24,7 +24,7 @@ that gets AWS credentials by calling STS AssumeRoleWithWebIdentity API.
 
 ```js
 import * as s3 from '@aws-sdk/client-s3';
-import { awsCredentialsProvider } from '@vercel/functions/oidc';
+import { awsCredentialsProvider } from '@khulnasoft/functions/oidc';
 
 const s3Client = new s3.S3Client({
   credentials: awsCredentialsProvider({
@@ -56,7 +56,7 @@ A function that provides AWS credentials.
 
 #### Defined in
 
-[packages/functions/src/oidc/aws-credentials-provider.ts:60](https://github.com/khulnasoft/devkit/blob/main/packages/functions/src/oidc/aws-credentials-provider.ts#L60)
+[packages/functions/src/oidc/aws-credentials-provider.ts:60](https://github.com/FortiShield/devkit/blob/main/packages/functions/src/oidc/aws-credentials-provider.ts#L60)
 
 ---
 
@@ -95,4 +95,4 @@ A promise that resolves to the OIDC token.
 
 #### Defined in
 
-[packages/functions/src/oidc/get-vercel-oidc-token.ts:24](https://github.com/khulnasoft/devkit/blob/main/packages/functions/src/oidc/get-vercel-oidc-token.ts#L24)
+[packages/functions/src/oidc/get-vercel-oidc-token.ts:24](https://github.com/FortiShield/devkit/blob/main/packages/functions/src/oidc/get-vercel-oidc-token.ts#L24)

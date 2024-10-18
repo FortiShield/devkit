@@ -99,7 +99,7 @@ function getFlag(countryCode: string | undefined): string | undefined {
  * @example
  *
  * ```js
- * import { ipAddress } from '@vercel/functions';
+ * import { ipAddress } from '@khulnasoft/functions';
  *
  * export function GET(request) {
  *   const ip = ipAddress(request)
@@ -147,7 +147,7 @@ function getRegionFromRequestId(requestId?: string): string | undefined {
  * @example
  *
  * ```js
- * import { geolocation } from '@vercel/functions';
+ * import { geolocation } from '@khulnasoft/functions';
  *
  * export function GET(request) {
  *   const details = geolocation(request);

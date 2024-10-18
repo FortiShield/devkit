@@ -14,8 +14,8 @@ import {
   runNpmInstall,
   runPackageJsonScript,
   scanParentDirs,
-} from '@vercel/build-utils';
-import type { BuildV2, PackageJson } from '@vercel/build-utils';
+} from '@khulnasoft/build-utils';
+import type { BuildV2, PackageJson } from '@khulnasoft/build-utils';
 import { getConfig } from '@vercel/static-config';
 import { Project } from 'ts-morph';
 

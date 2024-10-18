@@ -38,7 +38,7 @@ import {
   debug,
   isSymbolicLink,
   walkParentDirs,
-} from '@vercel/build-utils';
+} from '@khulnasoft/build-utils';
 import type {
   File,
   Files,
@@ -50,7 +50,7 @@ import type {
   StartDevServer,
   NodeVersion,
   BuildResultV3,
-} from '@vercel/build-utils';
+} from '@khulnasoft/build-utils';
 import { getConfig } from '@vercel/static-config';
 
 import { fixConfig, Register, register } from './typescript';

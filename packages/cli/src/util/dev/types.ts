@@ -1,6 +1,6 @@
 import http from 'http';
 import { ChildProcess } from 'child_process';
-import { Lambda as FunLambda } from '@vercel/fun';
+import { Lambda as FunLambda } from '@khulnasoft/fun';
 import {
   Builder as BuildConfig,
   BuildOptions,
@@ -12,7 +12,7 @@ import {
   FileBlob,
   FileFsRef,
   Lambda,
-} from '@vercel/build-utils';
+} from '@khulnasoft/build-utils';
 import { VercelConfig } from '@vercel/client';
 import { HandleValue, Route } from '@vercel/routing-utils';
 import { Output } from '../output';

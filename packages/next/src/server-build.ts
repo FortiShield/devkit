@@ -14,7 +14,7 @@ import {
   Files,
   BuildResultV2Typical as BuildResult,
   NodejsLambda,
-} from '@vercel/build-utils';
+} from '@khulnasoft/build-utils';
 import { Route, RouteWithHandle } from '@vercel/routing-utils';
 import { MAX_AGE_ONE_YEAR } from '.';
 import {
@@ -301,7 +301,7 @@ export async function serverBuild({
     throw new NowBuildError({
       code: 'NEXT_NO_SERVER_PAGES',
       message: 'No server pages were built',
-      link: 'https://err.sh/vercel/vercel/now-next-no-serverless-pages-built',
+      link: 'https://err.sh/khulnasoft/devkit/now-next-no-serverless-pages-built',
     });
   }
 

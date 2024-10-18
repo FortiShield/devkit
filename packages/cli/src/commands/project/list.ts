@@ -5,7 +5,7 @@ import type { Project } from '@vercel-internals/types';
 import Client from '../../util/client';
 import getCommandFlags from '../../util/get-command-flags';
 import { getCommandName } from '../../util/pkg-name';
-import { NODE_VERSIONS } from '@vercel/build-utils';
+import { NODE_VERSIONS } from '@khulnasoft/build-utils';
 
 export default async function list(
   client: Client,

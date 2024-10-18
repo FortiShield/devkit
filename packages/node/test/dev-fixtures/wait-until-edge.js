@@ -1,4 +1,4 @@
-import { waitUntil } from '@vercel/functions';
+import { waitUntil } from '@khulnasoft/functions';
 
 const baseUrl = ({ headers }) =>
   `${headers.get('x-forwarded-proto')}://${headers.get('x-forwarded-host')}`;

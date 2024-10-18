@@ -5,10 +5,10 @@ const evalScript = (code: string, flags: string[] = []) =>
   $('node', ['--eval', code, ...flags]).then(({ stdout }) => stdout);
 evalScript.esm = code => evalScript(code, ['--input-type', 'module']);
 
-describe('@vercel/functions', () => {
+describe('@khulnasoft/functions', () => {
   test('load as CommonJS', async () => {
     const code =
-      "console.log(JSON.stringify(Object.keys(require('@vercel/functions'))))";
+      "console.log(JSON.stringify(Object.keys(require('@khulnasoft/functions'))))";
     const exportedMethods = await evalScript(code).then(output =>
       JSON.parse(output)
     );
@@ -23,7 +23,7 @@ describe('@vercel/functions', () => {
 
   test('load as ESM', async () => {
     const code =
-      "import f from '@vercel/functions'; console.log(JSON.stringify(Object.keys(f)))";
+      "import f from '@khulnasoft/functions'; console.log(JSON.stringify(Object.keys(f)))";
     const exportedMethods = await evalScript
       .esm(code)
       .then(output => JSON.parse(output));
@@ -36,10 +36,10 @@ describe('@vercel/functions', () => {
   });
 });
 
-describe('@vercel/functions/oidc', () => {
+describe('@khulnasoft/functions/oidc', () => {
   test('load as CommonJS', async () => {
     const code =
-      "console.log(JSON.stringify(Object.keys(require('@vercel/functions/oidc'))))";
+      "console.log(JSON.stringify(Object.keys(require('@khulnasoft/functions/oidc'))))";
     const exportedMethods = await evalScript(code).then(output =>
       JSON.parse(output)
     );
@@ -52,7 +52,7 @@ describe('@vercel/functions/oidc', () => {
 
   test('load as ESM', async () => {
     const code =
-      "import f from '@vercel/functions/oidc'; console.log(JSON.stringify(Object.keys(f)))";
+      "import f from '@khulnasoft/functions/oidc'; console.log(JSON.stringify(Object.keys(f)))";
     const exportedMethods = await evalScript
       .esm(code)
       .then(output => JSON.parse(output));

@@ -17,7 +17,7 @@ import {
   runNpmInstall,
   runPackageJsonScript,
   scanParentDirs,
-} from '@vercel/build-utils';
+} from '@khulnasoft/build-utils';
 import { getConfig } from '@vercel/static-config';
 import { nodeFileTrace } from '@vercel/nft';
 import type {
@@ -26,7 +26,7 @@ import type {
   NodeVersion,
   PackageJson,
   BuildResultV2Typical,
-} from '@vercel/build-utils';
+} from '@khulnasoft/build-utils';
 import type { ConfigRoute } from '@remix-run/dev/dist/config/routes';
 import type { BaseFunctionConfig } from '@vercel/static-config';
 import {

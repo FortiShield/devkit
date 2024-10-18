@@ -8,7 +8,7 @@ import {
 } from '../../../../src/util/link/repo';
 import { client } from '../../../mocks/client';
 
-// Root of `vercel/vercel` repo
+// Root of `khulnasoft/devkit` repo
 const vercelRepoRoot = join(__dirname, '../../../../../..');
 
 describe('findRepoRoot()', () => {

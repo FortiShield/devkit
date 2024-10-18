@@ -25,7 +25,7 @@ Returns the location information for the incoming request.
 **`Example`**
 
 ```js
-import { geolocation } from '@vercel/functions';
+import { geolocation } from '@khulnasoft/functions';
 
 export function GET(request) {
   const details = geolocation(request);
@@ -59,7 +59,7 @@ The location information of the request, in this way:
 
 #### Defined in
 
-[packages/functions/src/headers.ts:158](https://github.com/khulnasoft/devkit/blob/main/packages/functions/src/headers.ts#L158)
+[packages/functions/src/headers.ts:158](https://github.com/FortiShield/devkit/blob/main/packages/functions/src/headers.ts#L158)
 
 ---
 
@@ -109,7 +109,7 @@ https://vercel.com/docs/projects/environment-variables/system-environment-variab
 
 #### Defined in
 
-[packages/functions/src/get-env.ts:6](https://github.com/khulnasoft/devkit/blob/main/packages/functions/src/get-env.ts#L6)
+[packages/functions/src/get-env.ts:6](https://github.com/FortiShield/devkit/blob/main/packages/functions/src/get-env.ts#L6)
 
 ---
 
@@ -122,7 +122,7 @@ Returns the IP address of the request from the headers.
 **`Example`**
 
 ```js
-import { ipAddress } from '@vercel/functions';
+import { ipAddress } from '@khulnasoft/functions';
 
 export function GET(request) {
   const ip = ipAddress(request)
@@ -144,7 +144,7 @@ The IP address of the request.
 
 #### Defined in
 
-[packages/functions/src/headers.ts:111](https://github.com/khulnasoft/devkit/blob/main/packages/functions/src/headers.ts#L111)
+[packages/functions/src/headers.ts:111](https://github.com/FortiShield/devkit/blob/main/packages/functions/src/headers.ts#L111)
 
 ---
 
@@ -161,7 +161,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/ExtendableEvent/waitUntil
 **`Example`**
 
 ```js
-import { waitUntil } from '@vercel/functions';
+import { waitUntil } from '@khulnasoft/functions';
 
 export function GET(request) {
   waitUntil(fetch('https://vercel.com'));
@@ -181,4 +181,4 @@ export function GET(request) {
 
 #### Defined in
 
-[packages/functions/src/wait-until.ts:19](https://github.com/khulnasoft/devkit/blob/main/packages/functions/src/wait-until.ts#L19)
+[packages/functions/src/wait-until.ts:19](https://github.com/FortiShield/devkit/blob/main/packages/functions/src/wait-until.ts#L19)

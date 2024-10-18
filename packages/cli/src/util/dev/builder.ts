@@ -4,7 +4,7 @@ import ms from 'ms';
 import bytes from 'bytes';
 import { delimiter, dirname, join } from 'path';
 import { fork, ChildProcess } from 'child_process';
-import { createFunction } from '@vercel/fun';
+import { createFunction } from '@khulnasoft/fun';
 import {
   Builder,
   BuildOptions,
@@ -14,7 +14,7 @@ import {
   FileBlob,
   FileFsRef,
   normalizePath,
-} from '@vercel/build-utils';
+} from '@khulnasoft/build-utils';
 import { isStaticRuntime } from '@vercel/fs-detectors';
 import plural from 'pluralize';
 import minimatch from 'minimatch';

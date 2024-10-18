@@ -30,6 +30,6 @@
     "typescript": "4.9.5"
   },
   "optionalDependencies": {
-    "ajv": "^6.0.0"
+    "ajv": "^6.12.6"
   }
 }

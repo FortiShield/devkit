@@ -40,7 +40,7 @@ export interface AwsCredentialsProviderInit // eslint-disable-line @typescript-e
  * @example
  * ```js
  * import * as s3 from '@aws-sdk/client-s3';
- * import { awsCredentialsProvider } from '@vercel/functions/oidc';
+ * import { awsCredentialsProvider } from '@khulnasoft/functions/oidc';
  *
  * const s3Client = new s3.S3Client({
  *   credentials: awsCredentialsProvider({
