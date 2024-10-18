@@ -1,7 +1,7 @@
 {
   "name": "@vercel/error-utils",
   "version": "2.0.2",
-  "description": "A collection of error utilities for vercel/vercel",
+  "description": "A collection of error utilities for khulnasoft/devkit",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [

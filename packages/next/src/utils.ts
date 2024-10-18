@@ -289,7 +289,7 @@ export async function getRoutesManifest(
   if (shouldHaveManifest && !hasRoutesManifest) {
     throw new NowBuildError({
       message: `The file "${pathRoutesManifest}" couldn't be found. This is often caused by a misconfiguration in your project.`,
-      link: 'https://err.sh/vercel/vercel/now-next-routes-manifest',
+      link: 'https://err.sh/khulnasoft/devkit/now-next-routes-manifest',
       code: 'NEXT_NO_ROUTES_MANIFEST',
     });
   }

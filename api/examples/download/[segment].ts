@@ -48,7 +48,10 @@ export default withApiHandler(async function (
 
   const example = segment.slice(0, -ext.length);
 
-  await extract('https://github.com/khulnasoft/devkit/archive/main.zip', TMP_DIR);
+  await extract(
+    'https://github.com/khulnasoft/devkit/archive/main.zip',
+    TMP_DIR
+  );
   const directory = `${TMP_DIR}/vercel-main/examples/${example}`;
 
   if (!isDirectory(directory)) {

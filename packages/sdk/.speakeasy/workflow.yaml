@@ -5,7 +5,7 @@ sources:
         inputs:
             - location: ../../open-api.yaml
         registry:
-            location: registry.speakeasyapi.dev/vercel-nv/vercel/vercel-oas
+            location: registry.speakeasyapi.dev/vercel-nv/khulnasoft/devkit-oas
 targets:
     vercel:
         target: typescript

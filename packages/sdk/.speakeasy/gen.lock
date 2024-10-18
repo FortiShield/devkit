@@ -9,7 +9,7 @@ management:
   configChecksum: 2f405a86619ffae6c5eef067eb61ac41
   repoURL: https://github.com/khulnasoft/devkit.git
   repoSubDirectory: packages/sdk
-  installationURL: https://gitpkg.now.sh/vercel/vercel/packages/sdk
+  installationURL: https://gitpkg.now.sh/khulnasoft/devkit/packages/sdk
   published: true
 features:
   typescript:
