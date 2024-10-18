@@ -20,7 +20,7 @@ export interface LogOptions {
   color?: Chalk;
 }
 
-export interface LinkOptions {
+interface LinkOptions {
   color?: false | ((text: string) => string);
   fallback?: false | (() => string);
 }

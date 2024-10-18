@@ -5,7 +5,7 @@ This directory is a brief example of a [Remix](https://remix.run/docs) site that
 To get started, run the Remix cli with this template
 
 ```sh
-npx create-remix@latest --template khulnasoft/devkit/examples/remix
+npx create-remix@latest --template vercel/vercel/examples/remix
 ```
 
 ## Deploy Your Own

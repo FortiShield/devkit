@@ -121,7 +121,7 @@ describe('parseRepoUrl', () => {
     expect(repoInfo?.repo).toEqual('vercel');
   });
   it('should parse github ssh url', () => {
-    const repoInfo = parseRepoUrl('git@github.com:khulnasoft/devkit.git');
+    const repoInfo = parseRepoUrl('git@github.com:vercel/vercel.git');
     expect(repoInfo).toBeTruthy();
     expect(repoInfo?.provider).toEqual('github');
     expect(repoInfo?.org).toEqual('vercel');
@@ -290,7 +290,7 @@ describe('createGitMeta', () => {
     const tmpDir = join(os.tmpdir(), 'git-corrupt');
     try {
       // Copy the fixture into a temp dir so that we don't pick
-      // up Git information from the `khulnasoft/devkit` repo itself
+      // up Git information from the `vercel/vercel` repo itself
       await fs.copy(directory, tmpDir);
       await fs.rename(join(tmpDir, 'git'), join(tmpDir, '.git'));
 

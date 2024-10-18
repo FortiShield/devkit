@@ -1,31 +1,5 @@
 # @vercel/next
 
-## 4.3.10
-
-### Patch Changes
-
-- Revert "Revert "Revert "Fix corepack `packageManager` detection on monorepos""" ([#12099](https://github.com/khulnasoft/devkit/pull/12099))
-
-## 4.3.9
-
-### Patch Changes
-
-- Revert "Revert "Fix corepack `packageManager` detection on monorepos"" ([#11871](https://github.com/khulnasoft/devkit/pull/11871))
-
-## 4.3.8
-
-### Patch Changes
-
-- Combine Partial Prerendering lambdas for revalidation and dynamic resumes. ([#12064](https://github.com/khulnasoft/devkit/pull/12064))
-
-- Added support for Partial Fallback Prerendering ([#12036](https://github.com/khulnasoft/devkit/pull/12036))
-
-## 4.3.7
-
-### Patch Changes
-
-- remove experimental .action output handling ([#11998](https://github.com/khulnasoft/devkit/pull/11998))
-
 ## 4.3.6
 
 ### Patch Changes

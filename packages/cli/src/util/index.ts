@@ -1,3 +1,4 @@
+import EventEmitter from 'events';
 import qs from 'querystring';
 import { parse as parseUrl } from 'url';
 import retry from 'async-retry';
@@ -65,7 +66,7 @@ export interface ListOptions {
   policy?: Dictionary<string>;
 }
 
-export default class Now {
+export default class Now extends EventEmitter {
   url: string | null;
   currentTeam: string | null;
   _client: Client;
@@ -82,6 +83,8 @@ export default class Now {
     forceNew = false,
     withCache = false,
   }: NowOptions) {
+    super();
+
     this.url = url;
     this._client = client;
     this._forceNew = forceNew;
@@ -96,6 +99,14 @@ export default class Now {
 
   get _token() {
     return this._client.authConfig.token;
+  }
+
+  get _output() {
+    return this._client.output;
+  }
+
+  get _debug() {
+    return this._client.output.isDebugEnabled();
   }
 
   async create(
@@ -180,7 +191,7 @@ export default class Now {
 
     if (deployment && deployment.warnings) {
       let sizeExceeded = 0;
-      const { log, warn } = this._client.output;
+      const { log, warn } = this._output;
 
       deployment.warnings.forEach((warning: any) => {
         if (warning.reason === 'size_limit_exceeded') {
@@ -304,6 +315,70 @@ export default class Now {
     return new Error(error.message || error.errorMessage);
   }
 
+  async findDeployment(hostOrId: string) {
+    const { debug } = this._output;
+
+    let id = hostOrId && !hostOrId.includes('.');
+
+    if (!id) {
+      let host = hostOrId.replace(/^https:\/\//i, '');
+
+      if (host.slice(-1) === '/') {
+        host = host.slice(0, -1);
+      }
+
+      const url = `/v10/now/deployments/get?url=${encodeURIComponent(
+        host
+      )}&resolve=1&noState=1`;
+
+      const deployment = await this.retry(
+        async bail => {
+          const res = await this._fetch(url);
+
+          // No retry on 4xx
+          if (res.status >= 400 && res.status < 500) {
+            debug(`Bailing on getting a deployment due to ${res.status}`);
+            return bail(
+              await responseError(res, `Failed to resolve deployment "${id}"`)
+            );
+          }
+
+          if (res.status !== 200) {
+            throw new Error('Fetching a deployment failed');
+          }
+
+          return res.json();
+        },
+        { retries: 3, minTimeout: 2500, onRetry: this._onRetry }
+      );
+
+      id = deployment.id;
+    }
+
+    return this.retry(
+      async bail => {
+        const res = await this._fetch(
+          `/v11/now/deployments/${encodeURIComponent(id)}`
+        );
+
+        // No retry on 4xx
+        if (res.status >= 400 && res.status < 500) {
+          debug(`Bailing on getting a deployment due to ${res.status}`);
+          return bail(
+            await responseError(res, `Failed to resolve deployment "${id}"`)
+          );
+        }
+
+        if (res.status !== 200) {
+          throw new Error('Fetching a deployment failed');
+        }
+
+        return res.json();
+      },
+      { retries: 3, minTimeout: 2500, onRetry: this._onRetry }
+    );
+  }
+
   async remove(deploymentId: string, { hard = false }: RemoveOptions) {
     const url = `/now/deployments/${deploymentId}?hard=${hard ? 1 : 0}`;
 
@@ -338,8 +413,10 @@ export default class Now {
   }
 
   _onRetry(err: Error) {
-    this._client.output.debug(`Retrying: ${err}\n${err.stack}`);
+    this._output.debug(`Retrying: ${err}\n${err.stack}`);
   }
+
+  close() {}
 
   async _fetch(_url: string, opts: FetchOptions = {}) {
     if (opts.useCurrentTeam !== false && this.currentTeam) {
@@ -366,7 +443,7 @@ export default class Now {
       body = opts.body;
     }
 
-    const res = await this._client.output.time(
+    const res = await this._output.time(
       `${opts.method || 'GET'} ${this._apiUrl}${_url} ${opts.body || ''}`,
       fetch(`${this._apiUrl}${_url}`, { ...opts, body })
     );

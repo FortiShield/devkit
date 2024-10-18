@@ -2,7 +2,6 @@
 const nextConfig = {
   experimental: {
     ppr: true,
-    pprFallbacks: true,
   },
   eslint: {
     // Warning: This allows production builds to successfully complete even if

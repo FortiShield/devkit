@@ -289,7 +289,7 @@ export const build: BuildV2 = async buildOptions => {
 
   if (isLegacy) {
     console.warn(
-      "WARNING: your application is being deployed in @vercel/next's legacy mode. http://err.sh/khulnasoft/devkit/now-next-legacy-mode"
+      "WARNING: your application is being deployed in @vercel/next's legacy mode. http://err.sh/vercel/vercel/now-next-legacy-mode"
     );
 
     await Promise.all([
@@ -403,14 +403,14 @@ export const build: BuildV2 = async buildOptions => {
         console.warn(
           `WARNING: your application is being opted out of @vercel/next's optimized lambdas mode due to legacy routes in ${path.basename(
             nowJsonPath
-          )}. http://err.sh/khulnasoft/devkit/next-legacy-routes-optimized-lambdas`
+          )}. http://err.sh/vercel/vercel/next-legacy-routes-optimized-lambdas`
         );
       }
     }
 
     if (hasFunctionsConfig) {
       console.warn(
-        `WARNING: Your application is being opted out of "@vercel/next" optimized lambdas mode due to \`functions\` config.\nMore info: http://err.sh/khulnasoft/devkit/next-functions-config-optimized-lambdas`
+        `WARNING: Your application is being opted out of "@vercel/next" optimized lambdas mode due to \`functions\` config.\nMore info: http://err.sh/vercel/vercel/next-functions-config-optimized-lambdas`
       );
     }
   }
@@ -1445,7 +1445,7 @@ export const build: BuildV2 = async buildOptions => {
       throw new NowBuildError({
         code: 'NEXT_NO_SERVERLESS_PAGES',
         message: 'No serverless pages were built',
-        link: 'https://err.sh/khulnasoft/devkit/now-next-no-serverless-pages-built',
+        link: 'https://err.sh/vercel/vercel/now-next-no-serverless-pages-built',
       });
     }
 
@@ -1946,6 +1946,7 @@ export const build: BuildV2 = async buildOptions => {
       bypassToken: prerenderManifest.bypassToken || '',
       isServerMode,
       isAppPPREnabled: false,
+      hasActionOutputSupport: false,
     }).then(arr =>
       localizeDynamicRoutes(
         arr,
@@ -1976,6 +1977,7 @@ export const build: BuildV2 = async buildOptions => {
         bypassToken: prerenderManifest.bypassToken || '',
         isServerMode,
         isAppPPREnabled: false,
+        hasActionOutputSupport: false,
       }).then(arr =>
         arr.map(route => {
           route.src = route.src.replace('^', `^${dynamicPrefix}`);

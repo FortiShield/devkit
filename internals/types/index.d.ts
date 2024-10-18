@@ -373,7 +373,6 @@ export interface Project extends ProjectSettings {
   targets?: {
     production?: Deployment;
   };
-  customEnvironments?: CustomEnvironment[];
 }
 
 export interface Org {

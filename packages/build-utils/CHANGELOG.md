@@ -1,45 +1,5 @@
 # @vercel/build-utils
 
-## 8.4.2
-
-### Patch Changes
-
-- Revert "Revert "Revert "Fix corepack `packageManager` detection on monorepos""" ([#12099](https://github.com/khulnasoft/devkit/pull/12099))
-
-## 8.4.1
-
-### Patch Changes
-
-- Revert "Revert "Fix corepack `packageManager` detection on monorepos"" ([#11871](https://github.com/khulnasoft/devkit/pull/11871))
-
-## 8.4.0
-
-### Minor Changes
-
-- Change warnings to errors in invalid corepack package manager states ([#12062](https://github.com/khulnasoft/devkit/pull/12062))
-
-## 8.3.9
-
-### Patch Changes
-
-- Provide help when users get ERR_PNPM_UNSUPPORTED_ENGINE errors without corepack ([#12034](https://github.com/khulnasoft/devkit/pull/12034))
-
-- Fix package-manager-warning-1 to happen only happen in correct cases ([#12050](https://github.com/khulnasoft/devkit/pull/12050))
-
-## 8.3.8
-
-### Patch Changes
-
-- Limit `package.json#packageManager` parsing to concrete versions ([#12025](https://github.com/khulnasoft/devkit/pull/12025))
-
-- Catch PNPM_UNSUPPORTED_ENGINE when corepack is enabled and throw a more helpful error ([#12017](https://github.com/khulnasoft/devkit/pull/12017))
-
-## 8.3.7
-
-### Patch Changes
-
-- Revert "Revert "warn on mismatched corepack and detected package managers"" ([#11887](https://github.com/khulnasoft/devkit/pull/11887))
-
 ## 8.3.6
 
 ### Patch Changes

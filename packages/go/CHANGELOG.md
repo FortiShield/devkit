@@ -1,11 +1,5 @@
 # @vercel/go
 
-## 3.1.2
-
-### Patch Changes
-
-- Added support for Go 1.23 and updated Go patch versions of 1.22 and 1.21 ([#12027](https://github.com/khulnasoft/devkit/pull/12027))
-
 ## 3.1.1
 
 ### Patch Changes

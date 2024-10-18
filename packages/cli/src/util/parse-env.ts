@@ -12,7 +12,7 @@ export const parseEnv = (env?: string | string[] | Dictionary<string>) => {
   }
 
   if (Array.isArray(env)) {
-    const startingDict: Dictionary<string | undefined> = {};
+    const startingDict: Dictionary<string> = {};
     return env.reduce((o, e) => {
       let key: string | undefined;
       let value: string | undefined;
@@ -25,7 +25,9 @@ export const parseEnv = (env?: string | string[] | Dictionary<string>) => {
         value = e.slice(equalsSign + 1);
       }
 
-      o[key] = value;
+      if (typeof value !== 'undefined') {
+        o[key] = value;
+      }
 
       return o;
     }, startingDict);

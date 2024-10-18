@@ -24,7 +24,6 @@ pnpm-lock.yaml
 .vercel
 coverage
 turbo-cache-key.json
-open-api.yaml
 /examples
 /public
 packages/*/dist
@@ -35,4 +34,3 @@ packages/**/test/dev/fixtures
 packages/**/test/build-fixtures
 packages/**/test/cache-fixtures
 packages/cli/src/util/dev/templates/*.ts
-packages/sdk/**

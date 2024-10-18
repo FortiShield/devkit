@@ -1,7 +1,10 @@
-import { URLSearchParams } from 'url';
 import { Output } from '../output';
 import Client from '../client';
-import type { ProjectEnvVariable } from '@vercel-internals/types';
+import type {
+  ProjectEnvVariable,
+  ProjectEnvTarget,
+} from '@vercel-internals/types';
+import { URLSearchParams } from 'url';
 
 /** The CLI command that was used that needs the environment variables. */
 export type EnvRecordsSource =
@@ -13,6 +16,7 @@ export type EnvRecordsSource =
   | 'vercel-cli:pull';
 
 export default async function getEnvRecords(
+  output: Output,
   client: Client,
   projectId: string,
   source: EnvRecordsSource,
@@ -21,12 +25,11 @@ export default async function getEnvRecords(
     gitBranch,
     decrypt,
   }: {
-    target?: string;
+    target?: ProjectEnvTarget | string;
     gitBranch?: string;
     decrypt?: boolean;
   } = {}
 ) {
-  const { output } = client;
   output.debug(
     `Fetching Environment Variables of project ${projectId} and target ${target}`
   );
@@ -59,7 +62,7 @@ export default async function getEnvRecords(
 }
 
 interface PullEnvOptions {
-  target?: string;
+  target?: ProjectEnvTarget | string;
   gitBranch?: string;
 }
 

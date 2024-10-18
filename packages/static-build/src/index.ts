@@ -651,7 +651,7 @@ export const build: BuildV2 = async ({
           await checkForPort(devPort, DEV_SERVER_PORT_BIND_TIMEOUT);
         } catch (err) {
           throw new Error(
-            `Failed to detect a server running on port ${devPort}.\nDetails: https://err.sh/khulnasoft/devkit/now-static-build-failed-to-detect-a-server`
+            `Failed to detect a server running on port ${devPort}.\nDetails: https://err.sh/vercel/vercel/now-static-build-failed-to-detect-a-server`
           );
         }
 

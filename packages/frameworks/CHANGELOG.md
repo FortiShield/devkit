@@ -1,17 +1,5 @@
 # @vercel/frameworks
 
-## 3.3.0
-
-### Minor Changes
-
-- [frameworks] Make FastHTML detector more specific ([#12065](https://github.com/khulnasoft/devkit/pull/12065))
-
-## 3.2.0
-
-### Minor Changes
-
-- [fs-detectors] Adds new detector for Sanity v3 ([#11991](https://github.com/khulnasoft/devkit/pull/11991))
-
 ## 3.1.1
 
 ### Patch Changes

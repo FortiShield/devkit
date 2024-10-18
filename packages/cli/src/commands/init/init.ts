@@ -9,6 +9,7 @@ import listItem from '../../util/output/list-item';
 import confirm from '../../util/input/confirm';
 import toHumanPath from '../../util/humanize-path';
 import Client from '../../util/client';
+import info from '../../util/output/info';
 import cmd from '../../util/output/cmd';
 import didYouMean from '../../util/init/did-you-mean';
 import { getCommandName } from '../../util/pkg-name';
@@ -78,7 +79,7 @@ export default async function init(
     return extractExample(client, found, dir, force);
   }
 
-  output.log('No changes made.');
+  output.log(info('No changes made.'));
   return 0;
 }
 

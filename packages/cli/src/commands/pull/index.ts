@@ -37,9 +37,11 @@ async function pullAllEnvFiles(
   return envPull(
     client,
     link,
+    project,
     environment,
     flags,
     [join('.vercel', environmentFile)],
+    client.output,
     cwd,
     'vercel-cli:pull'
   );

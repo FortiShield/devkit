@@ -10,51 +10,6 @@ import { useTeams } from '../../mocks/team';
 import { useUser } from '../../mocks/user';
 
 describe('env', () => {
-  describe('add', () => {
-    it('should allow `gitBranch` to be passed', async () => {
-      useUser();
-      useTeams('team_dummy');
-      useProject(
-        {
-          ...defaultProject,
-          id: 'vercel-env-pull',
-          name: 'vercel-env-pull',
-        },
-        [
-          ...envs,
-          {
-            type: 'encrypted',
-            id: '781dt89g8r2h789g',
-            key: 'REDIS_CONNECTION_STRING',
-            value: 'redis://abc123@redis.example.dev:6379',
-            target: ['development'],
-            gitBranch: undefined,
-            configurationId: null,
-            updatedAt: 1557241361455,
-            createdAt: 1557241361455,
-          },
-        ]
-      );
-      const cwd = setupUnitFixture('vercel-env-pull');
-      client.cwd = cwd;
-      client.setArgv(
-        'env',
-        'add',
-        'REDIS_CONNECTION_STRING',
-        'preview',
-        'branchName'
-      );
-      const exitCodePromise = env(client);
-      await expect(client.stderr).toOutput(
-        "What's the value of REDIS_CONNECTION_STRING?"
-      );
-      client.stdin.write('testvalue\n');
-      await expect(client.stderr).toOutput(
-        'Added Environment Variable REDIS_CONNECTION_STRING to Project vercel-env-pull'
-      );
-      await expect(exitCodePromise).resolves.toEqual(0);
-    });
-  });
   describe('pull', () => {
     it('should handle pulling', async () => {
       useUser();
@@ -69,7 +24,7 @@ describe('env', () => {
       client.setArgv('env', 'pull', '--yes');
       const exitCodePromise = env(client);
       await expect(client.stderr).toOutput(
-        'Downloading `development` Environment Variables for'
+        'Downloading `development` Environment Variables for Project vercel-env-pull'
       );
       await expect(client.stderr).toOutput(
         'Created .env.local file and added it to .gitignore'
@@ -96,7 +51,7 @@ describe('env', () => {
       client.setArgv('env', 'pull', '--yes', '--environment', 'preview');
       const exitCodePromise = env(client);
       await expect(client.stderr).toOutput(
-        'Downloading `preview` Environment Variables for'
+        'Downloading `preview` Environment Variables for Project vercel-env-pull'
       );
       await expect(client.stderr).toOutput(
         'Created .env.local file and added it to .gitignore'
@@ -134,7 +89,7 @@ describe('env', () => {
       );
       const exitCodePromise = env(client);
       await expect(client.stderr).toOutput(
-        'Downloading `preview` Environment Variables for'
+        'Downloading `preview` Environment Variables for Project vercel-env-pull'
       );
       await expect(client.stderr).toOutput(
         'Created .env.local file and added it to .gitignore'
@@ -171,7 +126,7 @@ describe('env', () => {
       client.setArgv('env', 'pull', 'other.env', '--yes');
       const exitCodePromise = env(client);
       await expect(client.stderr).toOutput(
-        'Downloading `development` Environment Variables for'
+        'Downloading `development` Environment Variables for Project vercel-env-pull'
       );
       await expect(client.stderr).toOutput('Created other.env file');
       await expect(client.stderr).not.toOutput('and added it to .gitignore');
@@ -197,7 +152,7 @@ describe('env', () => {
       client.setArgv('env', 'pull', '--environment', 'production');
       const exitCodePromise = env(client);
       await expect(client.stderr).toOutput(
-        `Downloading \`production\` Environment Variables for`
+        `Downloading \`production\` Environment Variables for Project vercel-env-pull`
       );
       await expect(client.stderr).toOutput(
         'Created .env.local file and added it to .gitignore'
@@ -234,7 +189,7 @@ describe('env', () => {
       );
       const exitCodePromise = env(client);
       await expect(client.stderr).toOutput(
-        'Downloading `production` Environment Variables for'
+        'Downloading `production` Environment Variables for Project vercel-env-pull'
       );
       await expect(client.stderr).toOutput('Created other.env file');
       await expect(client.stderr).not.toOutput('and added it to .gitignore');
@@ -262,7 +217,7 @@ describe('env', () => {
       client.setArgv('env', 'pull', 'other.env', '--yes');
       const exitCodePromise = env(client);
       await expect(client.stderr).toOutput(
-        'Downloading `development` Environment Variables for'
+        'Downloading `development` Environment Variables for Project vercel-env-pull'
       );
       await expect(client.stderr).toOutput('Created other.env file');
       await expect(client.stderr).not.toOutput('and added it to .gitignore');
@@ -297,7 +252,7 @@ describe('env', () => {
         client.setArgv('env', 'add', 'NEW_VAR');
         const addPromise = env(client);
 
-        await expect(client.stderr).toOutput("What's the value of NEW_VAR?");
+        await expect(client.stderr).toOutput('What’s the value of NEW_VAR?');
         client.stdin.write('testvalue\n');
 
         await expect(client.stderr).toOutput(
@@ -313,7 +268,7 @@ describe('env', () => {
         client.setArgv('env', 'pull', '--yes');
         const pullPromise = env(client);
         await expect(client.stderr).toOutput(
-          'Downloading `development` Environment Variables for'
+          'Downloading `development` Environment Variables for Project env-pull-delta'
         );
         await expect(client.stderr).toOutput(
           '+ SPECIAL_FLAG (Updated)\n+ NEW_VAR\n- TEST\n'
@@ -395,7 +350,7 @@ describe('env', () => {
         client.setArgv('env', 'pull', '--yes');
         const pullPromise = env(client);
         await expect(client.stderr).toOutput(
-          'Downloading `development` Environment Variables for'
+          'Downloading `development` Environment Variables for Project env-pull-delta'
         );
         await expect(client.stderr).toOutput('No changes found.\n');
         await expect(client.stderr).toOutput(
@@ -439,7 +394,7 @@ describe('env', () => {
         client.setArgv('env', 'pull', '.env.testquotes', '--yes');
         const pullPromise = env(client);
         await expect(client.stderr).toOutput(
-          'Downloading `development` Environment Variables for'
+          'Downloading `development` Environment Variables for Project env-pull-delta'
         );
         await expect(client.stderr).toOutput('No changes found.\n');
         await expect(client.stderr).toOutput('Updated .env.testquotes file');
@@ -469,7 +424,7 @@ describe('env', () => {
       client.setArgv('env', 'pull', '--yes');
       const exitCodePromise = env(client);
       await expect(client.stderr).toOutput(
-        'Downloading `development` Environment Variables for'
+        'Downloading `development` Environment Variables for Project ' + prj
       );
       await expect(client.stderr).toOutput('Created .env.local file');
       await expect(client.stderr).not.toOutput('and added it to .gitignore');
@@ -519,7 +474,7 @@ describe('env', () => {
       client.setArgv('env', 'pull', '--yes');
       const exitCodePromise = env(client);
       await expect(client.stderr).toOutput(
-        'Downloading `development` Environment Variables for'
+        'Downloading `development` Environment Variables for Project '
       );
       await expect(client.stderr).toOutput('Created .env.local file');
       await expect(exitCodePromise).resolves.toEqual(0);
